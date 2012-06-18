@@ -6,7 +6,7 @@
       <server name="Server1" machineName="Server1"/>
       <server name="Server2" machineName="The Other Server"/>
     </service>
-    <service name="Service The Second" exepath="C:\pharmatrack.exe">
+    <service name="Service The Second" exepath="C:\myservice.exe">
       <server name="Local" machineName="localhost"/>
       <server name="Server1" machineName="Server1"/>
       <server name="Server2" machineName="The Other Server"/>
