@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <config>
   <services>
-    <service name="HL7MessageForwarder">
+    <service name="Great Service 1">
       <server name="Local" machineName="localhost"/>
-      <server name="Teal" machineName="teal"/>
-      <server name="Sulphur" machineName="sulphur"/>
+      <server name="Server1" machineName="Server1"/>
+      <server name="Server2" machineName="The Other Server"/>
     </service>
-    <service name="Pharmacy Tracker" exepath="C:\pharmatrack.exe">
+    <service name="Service The Second" exepath="C:\pharmatrack.exe">
       <server name="Local" machineName="localhost"/>
-      <server name="Teal" machineName="teal"/>
-      <server name="Stone" machineName="stone"/>
+      <server name="Server1" machineName="Server1"/>
+      <server name="Server2" machineName="The Other Server"/>
     </service>
   </services>
 </config>
