@@ -13,15 +13,17 @@ For a service which is only deployed on the Alpha server, the config would look 
 </service>
 
 To monitor 3 servers, the config could look like this:
-<service name="My Great Service" exepath="C:\path\to\service.exe">
-  <server name="Localhost (Test)" machineName="localhost"/>
-  <server name="Alpha" machineName="alpha"/>
-  <server name="Omega" machineName="176.192.1.1"/>
-</service>
+
+    <service name="My Great Service" exepath="C:\path\to\service.exe">
+      <server name="Localhost (Test)" machineName="localhost"/>
+      <server name="Alpha" machineName="alpha"/>
+      <server name="Omega" machineName="176.192.1.1"/>
+    </service>
 
 The available options are:
-*MachineName* - The host name to which to connect (not displayed)                                               
-*ExePath* - The path on the server where the service is located 
+
+* *MachineName* - The host name to which to connect (not displayed)                                               
+* *ExePath* - The path on the server where the service is located 
 
 # Usage
 1. Copy the service executable to it's destination on the server, Eg: Explorer (the tool doesn't do this).
@@ -30,4 +32,4 @@ The available options are:
 4. Use the start/stop buttons to control the service
 
 # Troubleshooting
-If the service fails to start, it's likely the exe path is wrong. If you have permission, it should 'just work'
+If the service fails to start, it's likely the exe path is wrong. If you have permission, it should 'just work'.
