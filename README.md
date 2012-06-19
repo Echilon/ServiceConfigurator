@@ -1,7 +1,9 @@
 ServiceConfigurator
 ===================
 
-Install, uninstall and control remote and local windows services
+Install, uninstall and control remote and local windows services.
+
+Totally configurable via an XML config file. No recompilation necessary, just edit the XML and run the exe.
 
 # Configuration
 The app uses config.xml which is in the application directory. You can monitor as many services as needed. Eg:
