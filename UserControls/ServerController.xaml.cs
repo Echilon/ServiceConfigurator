@@ -27,6 +27,14 @@ namespace ServiceConfigurator
     /// </summary>
     public partial class ServerController : UserControl
     {
+        public static readonly DependencyProperty RefreshCommandProperty =
+            DependencyProperty.Register("RefreshCommand", typeof (ICommand), typeof (ServerController), new PropertyMetadata(default(ICommand)));
+
+        public ICommand RefreshCommand {
+            get { return (ICommand) GetValue(RefreshCommandProperty); }
+            set { SetValue(RefreshCommandProperty, value); }
+        }
+
         public static readonly DependencyProperty ServerProperty =
             DependencyProperty.Register("Server", typeof(Server), typeof(ServerController), 
             new PropertyMetadata(new Server(),
@@ -193,6 +201,10 @@ namespace ServiceConfigurator
 
         private void UpdateStatus(object sender, ExecutedRoutedEventArgs e) {
             RefreshStatus();
+        }
+
+        private void CanAlwaysExecute(object sender, CanExecuteRoutedEventArgs e) {
+            e.CanExecute = true;
         }
     }
 }

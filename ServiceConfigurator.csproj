@@ -50,8 +50,13 @@
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Management" />
     <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Windows.Interactivity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files\Microsoft SDKs\Expression\Blend\.NETFramework\v4.0\Libraries\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -74,6 +79,7 @@
     </ApplicationDefinition>
     <Compile Include="Converters.cs" />
     <Compile Include="DTOs\Service.cs" />
+    <Compile Include="IgnoreMouseWheelBehavior.cs" />
     <Compile Include="UserControls\ImageButton.cs" />
     <Compile Include="ServiceUtils\IWmiAccess.cs" />
     <Compile Include="DTOs\Server.cs" />
@@ -146,6 +152,15 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\server_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\info_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\info_16.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

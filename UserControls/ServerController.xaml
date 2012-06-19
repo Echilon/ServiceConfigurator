@@ -7,7 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300" x:Name="root">
     <UserControl.CommandBindings>
-        <CommandBinding Command="NavigationCommands.Refresh" Executed="UpdateStatus"/>
+        <CommandBinding Command="NavigationCommands.Refresh" Executed="UpdateStatus" CanExecute="CanAlwaysExecute" />
     </UserControl.CommandBindings>
     <xctk:BusyIndicator x:Name="busyIndicator" DataContext="{Binding Server,ElementName=root}">
         <Grid>
@@ -19,19 +19,24 @@
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
-                <ColumnDefinition Width="Auto" SharedSizeGroup="path"/>
-                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*" SharedSizeGroup="path"/>
+                <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
 
+            <StackPanel Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" Orientation="Horizontal">
+                <Image Source="pack://application:,,,/Resources/server_32.png" Stretch="None" Width="32"/>
+                <Label Content="{Binding Name}" FontSize="16" VerticalAlignment="Center"/>
+            </StackPanel>
+            
             <Label Grid.Row="1" Grid.Column="0" Content="Service Status"  />
             <Label x:Name="lblStatus" Grid.Row="1" Grid.Column="1"/>
             <loc:ImageButton x:Name="btnStop" Grid.Row="1" Grid.Column="3" Click="btnStartStop_Click" CommandParameter="0" Width="85" Margin="10,0,0,10" Text="Stop" Image="pack://application:,,,/Resources/stop_16.png" ImageLocation="Left"/>
             <loc:ImageButton x:Name="btnStart" Grid.Row="1" Grid.Column="4" Click="btnStartStop_Click" CommandParameter="1" Width="85" Margin="10,0,0,10" Text="Start" Image="pack://application:,,,/Resources/go_16.png" ImageLocation="Left"/>
 
             <Label Grid.Row="2" Grid.Column="0" Content="Deployment Path"/>
-            <TextBox x:Name="txtPath" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Text="{Binding ExePath,Mode=TwoWay}" />
+            <TextBox x:Name="txtPath" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Text="{Binding ExePath,Mode=TwoWay}" MaxWidth="200"/>
             <loc:ImageButton x:Name="btnUninstall" Grid.Row="2" Grid.Column="3" Click="btnInstall_Click" CommandParameter="0" Width="85" Margin="10,0,0,0" Text="Uninstall" Image="pack://application:,,,/Resources/application_remove_16.png" ImageLocation="Left"/>
             <loc:ImageButton x:Name="btnInstall" Grid.Row="2" Grid.Column="4" Click="btnInstall_Click" CommandParameter="1" Width="85" Margin="10,0,0,0" Text="Install" Image="pack://application:,,,/Resources/application_add_16.png" ImageLocation="Left"/>
         </Grid>

@@ -42,16 +42,19 @@ namespace ServiceConfigurator
         public MainWindow()
         {
             InitializeComponent();
+            
             var services = Utils.ParseConfig();
             foreach (var s in services) {
                 this.Services.Add(s);
             }
         }
-        
-        private void btnRefresh_Click(object sender, RoutedEventArgs e) {
-            foreach (var visualYSnappingGuideline in VisualYSnappingGuidelines) {
-                
-            }
+
+        private void Window_Closing(object sender, CancelEventArgs e) {
+            Utils.SaveConfig(this.Services);
+        }
+
+        private void CanAlwaysExecute(object sender, CanExecuteRoutedEventArgs e) {
+            e.CanExecute = true;
         }
     }
 }

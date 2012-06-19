@@ -1,4 +1,50 @@
 ﻿<RecentFiles>
-  <RecentFiles />
-  <RecentEdits />
+  <RecentFiles>
+    <File id="43AFE579-A8D7-4E31-8C7D-0D915CCD705D/d:ServiceUtils/f:WmiService.cs" caret="250" fromTop="9" />
+    <File id="43AFE579-A8D7-4E31-8C7D-0D915CCD705D/f:Styles.xaml" caret="227" fromTop="2" />
+    <File id="43AFE579-A8D7-4E31-8C7D-0D915CCD705D/d:ServiceUtils/f:IWmiAccess.cs" caret="2832" fromTop="16" />
+    <File id="43AFE579-A8D7-4E31-8C7D-0D915CCD705D/d:UserControls/f:ImageButton.cs" caret="215" fromTop="7" />
+    <File id="43AFE579-A8D7-4E31-8C7D-0D915CCD705D/d:DTOs/f:Service.cs" caret="1293" fromTop="22" />
+    <File id="43AFE579-A8D7-4E31-8C7D-0D915CCD705D/d:DTOs/f:Server.cs" caret="1517" fromTop="22" />
+    <File id="43AFE579-A8D7-4E31-8C7D-0D915CCD705D/d:UserControls/f:ServerController.xaml.cs" caret="8481" fromTop="29" />
+    <File id="43AFE579-A8D7-4E31-8C7D-0D915CCD705D/d:UserControls/f:ServerController.xaml" caret="1190" fromTop="19" />
+    <File id="43AFE579-A8D7-4E31-8C7D-0D915CCD705D/f:MainWindow.xaml.cs" caret="1696" fromTop="27" />
+    <File id="43AFE579-A8D7-4E31-8C7D-0D915CCD705D/f:Utils.cs" caret="1192" fromTop="18" />
+    <File id="43AFE579-A8D7-4E31-8C7D-0D915CCD705D/f:Converters.cs" caret="162" fromTop="9" />
+    <File id="43AFE579-A8D7-4E31-8C7D-0D915CCD705D/f:config.xml" caret="527" fromTop="11" />
+    <File id="43AFE579-A8D7-4E31-8C7D-0D915CCD705D/f:IgnoreMouseWheelBehavior.cs" caret="418" fromTop="14" />
+    <File id="43AFE579-A8D7-4E31-8C7D-0D915CCD705D/f:MainWindow.xaml" caret="1629" fromTop="26" />
+  </RecentFiles>
+  <RecentEdits>
+    <File id="43AFE579-A8D7-4E31-8C7D-0D915CCD705D/f:MainWindow.xaml" caret="2262" fromTop="20" />
+    <File id="43AFE579-A8D7-4E31-8C7D-0D915CCD705D/f:MainWindow.xaml" caret="3137" fromTop="22" />
+    <File id="43AFE579-A8D7-4E31-8C7D-0D915CCD705D/f:MainWindow.xaml.cs" caret="1658" fromTop="20" />
+    <File id="43AFE579-A8D7-4E31-8C7D-0D915CCD705D/f:MainWindow.xaml" caret="2578" fromTop="22" />
+    <File id="43AFE579-A8D7-4E31-8C7D-0D915CCD705D/f:Utils.cs" caret="2117" fromTop="25" />
+    <File id="43AFE579-A8D7-4E31-8C7D-0D915CCD705D/f:Utils.cs" caret="1010" fromTop="15" />
+    <File id="43AFE579-A8D7-4E31-8C7D-0D915CCD705D/f:MainWindow.xaml.cs" caret="1960" fromTop="25" />
+    <File id="43AFE579-A8D7-4E31-8C7D-0D915CCD705D/f:Utils.cs" caret="1091" fromTop="17" />
+    <File id="43AFE579-A8D7-4E31-8C7D-0D915CCD705D/f:Utils.cs" caret="1408" fromTop="23" />
+    <File id="43AFE579-A8D7-4E31-8C7D-0D915CCD705D/d:DTOs/f:Server.cs" caret="1118" fromTop="22" />
+    <File id="43AFE579-A8D7-4E31-8C7D-0D915CCD705D/d:DTOs/f:Server.cs" caret="1546" fromTop="26" />
+    <File id="43AFE579-A8D7-4E31-8C7D-0D915CCD705D/d:UserControls/f:ServerController.xaml" caret="1284" fromTop="9" />
+    <File id="43AFE579-A8D7-4E31-8C7D-0D915CCD705D/d:DTOs/f:Server.cs" caret="1299" fromTop="22" />
+    <File id="43AFE579-A8D7-4E31-8C7D-0D915CCD705D/d:UserControls/f:ServerController.xaml" caret="2692" fromTop="23" />
+    <File id="43AFE579-A8D7-4E31-8C7D-0D915CCD705D/f:IgnoreMouseWheelBehavior.cs" caret="1197" fromTop="30" />
+    <File id="43AFE579-A8D7-4E31-8C7D-0D915CCD705D/f:MainWindow.xaml" caret="2969" fromTop="15" />
+    <File id="43AFE579-A8D7-4E31-8C7D-0D915CCD705D/f:IgnoreMouseWheelBehavior.cs" caret="452" fromTop="14" />
+    <File id="43AFE579-A8D7-4E31-8C7D-0D915CCD705D/f:MainWindow.xaml.cs" caret="1948" fromTop="21" />
+    <File id="43AFE579-A8D7-4E31-8C7D-0D915CCD705D/d:UserControls/f:ServerController.xaml" caret="1799" fromTop="17" />
+    <File id="43AFE579-A8D7-4E31-8C7D-0D915CCD705D/d:UserControls/f:ServerController.xaml.cs" caret="1034" fromTop="21" />
+    <File id="43AFE579-A8D7-4E31-8C7D-0D915CCD705D/d:UserControls/f:ServerController.xaml" caret="734" fromTop="9" />
+    <File id="43AFE579-A8D7-4E31-8C7D-0D915CCD705D/d:UserControls/f:ServerController.xaml.cs" caret="8593" fromTop="30" />
+    <File id="43AFE579-A8D7-4E31-8C7D-0D915CCD705D/f:MainWindow.xaml" caret="3299" fromTop="16" />
+    <File id="43AFE579-A8D7-4E31-8C7D-0D915CCD705D/f:MainWindow.xaml.cs" caret="1527" fromTop="27" />
+    <File id="43AFE579-A8D7-4E31-8C7D-0D915CCD705D/f:MainWindow.xaml.cs" caret="1696" fromTop="27" />
+    <File id="43AFE579-A8D7-4E31-8C7D-0D915CCD705D/f:config.xml" caret="527" fromTop="5" />
+    <File id="43AFE579-A8D7-4E31-8C7D-0D915CCD705D/f:MainWindow.xaml" caret="670" fromTop="11" />
+    <File id="43AFE579-A8D7-4E31-8C7D-0D915CCD705D/f:MainWindow.xaml" caret="385" fromTop="5" />
+    <File id="43AFE579-A8D7-4E31-8C7D-0D915CCD705D/f:MainWindow.xaml" caret="945" fromTop="26" />
+    <File id="43AFE579-A8D7-4E31-8C7D-0D915CCD705D/f:MainWindow.xaml" caret="1629" fromTop="26" />
+  </RecentEdits>
 </RecentFiles>

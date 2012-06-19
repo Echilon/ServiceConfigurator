@@ -36,17 +36,17 @@ namespace ServiceConfigurator
         :this() {
             this.MachineName = element.Attribute("machineName").Value;
             this.Name = element.Attribute("name").Value;
-            var eleExePath = element.Attribute("exepath");
+            var eleExePath = element.Attribute("exePath");
             if (eleExePath != null)
                 ExePath = eleExePath.Value;
         }
 
         public XElement ToXml() {
-            var root = new XElement("service",
+            var root = new XElement("server",
                                     new XAttribute("name", Name),
                                     new XAttribute("machineName", MachineName));
             if (!string.IsNullOrEmpty(ExePath))
-                root.Add(new XAttribute("exepath", ExePath));
+                root.Add(new XAttribute("exePath", ExePath));
             return root;
         }
     }

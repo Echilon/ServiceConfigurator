@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -25,6 +26,19 @@ namespace ServiceConfigurator
                 services.Add(service);
             }
             return services;
+        }
+
+        /// <summary>
+        /// Saves a configuration to the app directory.
+        /// </summary>
+        /// <param name="services">The services.</param>
+        public static void SaveConfig(IEnumerable<Service> services)
+        {
+            var configPath = Path.Combine(Utils.GetApplicationPath(), "config.xml");
+            var doc = new XDocument(new XDeclaration("1.0", "utf-8", "no"),
+                                    new XElement("config",
+                                                 new XElement("services", services.Select(s => s.ToXml()))));
+            doc.Save(configPath, SaveOptions.None);
         }
 
         /// <summary>
