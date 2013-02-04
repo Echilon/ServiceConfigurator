@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Serviceconfigurator by Echilon</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/Echilon/ServiceConfigurator">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/Echilon/ServiceConfigurator/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/Echilon/ServiceConfigurator/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Serviceconfigurator</h1>
+          <p>Install, uninstall and control remote and local windows services</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/Echilon">Echilon</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span>
+        </div>
+
+        <p>Totally configurable via an XML config file. No recompilation necessary, just edit the XML and run the exe.</p>
+
+<h1>Configuration</h1>
+
+<p>The app uses config.xml which is in the application directory. You can monitor as many services as needed. Eg:
+For a service which is only deployed on the Alpha server, the config would look like this:
+</p>
+
+<p>To monitor 3 servers, the config could look like this:</p>
+
+<pre><code>&lt;service name="My Great Service" exepath="C:\path\to\service.exe"&gt;
+  &lt;server name="Localhost (Test)" machineName="localhost"/&gt;
+  &lt;server name="Alpha" machineName="alpha"/&gt;
+  &lt;server name="Omega" machineName="176.192.1.1"/&gt;
+&lt;/service&gt;
+</code></pre>
+
+<p>The available options are:</p>
+
+<ul>
+<li>
+<em>MachineName</em> - The host name to which to connect (not displayed)<br>
+</li>
+<li>
+<em>ExePath</em> - The path on the server where the service is located </li>
+</ul><h1>Usage</h1>
+
+<ol>
+<li>Copy the service executable to it's destination on the server, Eg: Explorer (the tool doesn't do this).</li>
+<li>Enter the path on the server where the service was copied</li>
+<li>Click the Install button.</li>
+<li>Use the start/stop buttons to control the service</li>
+</ol><h1>Troubleshooting</h1>
+
+<p>If the service fails to start, it's likely the exe path is wrong. If you have permission, it should 'just work'.</p>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
